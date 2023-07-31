@@ -1,3 +1,4 @@
+/* Navbar */
 header{
     background-color: blueviolet;
     /* position: sticky;
@@ -5,6 +6,22 @@ header{
     z-index: 2000;*/
     
 } 
+.sombra{
+    box-shadow: 0px 9px 32px 2px rgba(0,0,0,0.53);
+}
+
+.bi{
+    width: 32px;
+    height: 32px;
+}
+
+/* Carousel */
+.barra{
+  background: linear-gradient(90deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+  border-radius: 8px;
+  height: 1px;
+  transform: translateX(-5px)
+}
 
 .cont-carousel{
     position: absolute;
@@ -26,10 +43,6 @@ header{
 
 }
 
-.sombra{
-    box-shadow: 0px 9px 32px 2px rgba(0,0,0,0.53);
-}
-
 .nosotros{
     text-align: justify;
     line-height: 2em;
@@ -40,11 +53,7 @@ header{
 }
 
 @media(max-width:800px){
-    .nosotros .info{
-        /* align-items: center;
-        display: flex;
-        flex-direction: column-reverse; */
-    }
+   
 }
 
 @media(max-width:768px){
