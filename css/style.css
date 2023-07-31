@@ -17,10 +17,10 @@ header{
 }
 
 .btn-view{
-    width: 300px;
+    width: 400px;
     height: 60px;
     display: flex;
-    border: 1px red solid;
+    /* border: 1px red solid; */
     align-items: center;
     justify-content: center;
 
