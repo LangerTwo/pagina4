@@ -15,6 +15,10 @@ header{
     line-height: 2em;
 }
 
+.container-datos{
+    width: 60%;
+}
+
 @media(max-width:800px){
     .nosotros .info{
         /* align-items: center;
