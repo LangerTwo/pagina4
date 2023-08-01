@@ -14,47 +14,116 @@
    <!--Css-->
    <link rel="stylesheet" href="css/style.css"> 
   </head>
+  <style>
+    nav,
+    
+    .navbar-toggler{
+        border: none;
+    }
+    .navbar-toggler:focus{
+        outline: none;
+        box-shadow: none;
+    }
+    @media(max-width:768px){
+      .navbar-nav > li:hover{
+        background-color: #0dcaf0;
+      }
+    }
+</style>
   <body>
 
     <!--Navbar-->
     <header class="sticky-top sombra">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
-          <a class="navbar-brand " href="#">Navbar</a>
-          <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <a class="navbar-brand " href="#">Navbar</a>
+            <!-- Offcanvas -->
+            <button class="navbar-toggler order-first" type="button" data-bs-toggle="offcanvas" data-bs-target="#menuLateral">
+              <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Servicio 1</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Servicio 2</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Servicio 3</a></li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" aria-disabled="true" href="#seccion-contacto">Contacto</a>
-              </li>
-              
-            </ul>
-          </div>
-          <div class="buscar">
-            <button class="btn ">
-              <i class="bi bi-search text-white"></i>
+            <section class="offcanvas offcanvas-start offcanvas-collapse bg-body-tertiary" id="menuLateral" tabindex="-1">
+              <div class="offcanvas-header" data-bs-theme="ligth">
+                  <h5 class="offcanvas-title text-info">Practica Boostrap</h5>
+                  <button class="btn-close" type="button" aria-label="close" data-bs-dismiss="offcanvas" ></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between px-0 ">
+                  <!-- <ul class="navbar-nav fs-5 justify-content-evenly">
+                      <li class="nav-item p-3 py-md-1">
+                          <a href="#" class="nav-link">Home</a>
+                      </li>
+                      <li class="nav-item p-3 py-md-1">
+                          <a href="#" class="nav-link">Projects</a>
+                      </li>
+                      <li class="nav-item p-3 py-md-1">
+                          <a href="#" class="nav-link">About</a>
+                      </li>
+                      <li class="nav-item p-3 py-md-1">
+                          <a href="#" class="nav-link">Contact</a>
+                      </li>
+                  </ul> -->
+
+                    <ul class="navbar-nav mb-2 mb-lg-0 d-flex">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                      </li>
+                      <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">Servicio 1</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Servicio 2</a></li>
+                          <li><hr class="dropdown-divider"></li>
+                          <li><a class="dropdown-item" href="#">Servicio 3</a></li>
+                        </ul>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-disabled="true" href="#seccion-contacto">Contacto</a>
+                      </li>
+                      
+                    </ul>
+                  
+              </div>
+          </section>
+
+            <!-- <button class="navbar-toggler order-first" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
             </button>
-          </div>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">Servicio 1</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servicio 2</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#">Servicio 3</a></li>
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" aria-disabled="true" href="#seccion-contacto">Contacto</a>
+                </li>
+                
+              </ul>
+            </div> -->
+            <div class="buscar">
+              <button class="btn ">
+                <i class="bi bi-search text-white"></i>
+              </button>
+            </div>
         </div>
       </nav>
     </header>
